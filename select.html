@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>zoom人狼</title>         
+        <link rel="stylesheet" href="style2.css">
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="jquery.bpopup.js"></script>
+        <script>
+    		$(document).ready(function() { setTimeout(function(){ $("#popup_this").bPopup({modal:false}); $("#popup_this").css("display", "block"); }, 3000); });
+		</script>
+        <script>
+function clickBtn1(){
+	let str = "";
+	const color1 = document.form1.color1;
+
+	for (let i = 0; i < color1.length; i++){
+		if(color1[i].checked){ 
+			str = color1[i].value;
+			break;
+		}
+	}
+	
+  console.log('ending:', str);
+  switch (str) {
+  case "A":
+    location.assign("endA.html");
+    break;
+  case "B":
+    location.assign("endB.html");
+    break;
+  default:
+    console.log('try again');
+}
+}
+</script>
+    </head>     
+    <body> 
+        <div class="call">
+            <header class="header1">
+                <div>
+                    <img src="1.png">
+                    <img src="2.png">
+                    <img src="3.png">
+                </div>
+            </header>
+            <article class="body1">
+                <p><b>Host</b></p>
+            </article>
+            <div class="left-sidebar">
+                <img src="L.png">
+            </div>
+            <footer class="footer1">
+                <img src="C.png">
+            </footer>
+            <div class="right-sidebar">
+                <img src="R.png">
+            </div>
+        </div>
+        <div class="chat"> 
+            <header class="header2">
+                <b>チャット</b>
+            </header>             
+            <article class="body2"> 
+                <p><span style="color:#4a92fd;">Host</span>からMC: <span style="color:red;">(プライベート)</span></p>
+                <p><span>A男<br>O人家族だ！　実はOOなんだって！<br>B子<br>仕事はOOだ！　実はOOがニガテだぞ！</span></p> 
+            </article>             
+            <footer class="footer2" style="color: #686868; border-left-color: #000000;">
+                <div style="color: #686868; font-family: helvetica;">
+                    送信先：
+                    <button type="button" class="btn btn-light" style="border-color: rgba(0, 0, 0, 0); font-size: .6rem;">
+                        <div style="color: #686868; font-family: helvetica; ">Host</div>
+                    </button>
+                </div>                 
+                <br>            ここにメッセージを入力します。。。
+            </footer>
+        </div>
+        <div id="popup_this">
+            <header class="header3">投票</header>
+            <form name="form1">
+                <article class="article3"> 
+                    <p><b>誰に投票しますか？</b></p>
+                    <input type="radio" name="color1" value="A" checked> A 
+                    <br>
+                    <input type="radio" name="color1" value="B"> B 
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </article>
+                <footer class="footer3">
+                    <input type="button" class="button2" value="送信" onclick="clickBtn1()"/>
+                </footer>
+            </form>
+        </div>
+    </body>     
+</html>

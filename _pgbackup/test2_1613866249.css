@@ -1,0 +1,143 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr minmax(150px, 25%);
+    padding: 0;
+    margin: 0;
+    font-family: helvetica;
+}
+
+.call {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    text-align: center;
+    background: #1a1a1a;
+}
+
+.header1 {
+    grid-column: 1 / 4;
+}
+
+.body1 {
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 6rem;
+    grid-column: 1 / 4;
+}
+
+.left-sidebar {
+    grid-column: 1 / 2;
+}
+
+.footer1 {
+    grid-column: 2 / 3;
+}
+
+.right-sidebar {
+    grid-column: 3 / 4;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+}
+
+.header1 img {
+    border: 0;
+    width: auto;
+    height: 15vh;
+    vertical-align: top;
+}
+
+.left-sidebar img {
+    border: 0;
+    width: auto;
+    height: 6vh;
+    vertical-align: top;
+}
+
+.footer1 img {
+    border: 0;
+    width: auto;
+    height: 6vh;
+    vertical-align: top;
+}
+
+.right-sidebar img {
+    border: 0;
+    width: auto;
+    height: 6vh;
+    vertical-align: top;
+}
+
+.chat {
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header2 {
+    padding: 5px 0px 0px;
+}
+
+.body2 {
+    text-align: left;
+    padding: 0 10px;
+    color: #686868;
+    font-size: 0.6rem;
+}
+
+.footer2 {
+    color: #686868;
+    font-size: 0.6rem;
+    text-align: left;
+    padding: 10px 10px 20px;
+    border-top: 1px solid #11111133;
+    line-height: 0.8;
+}
+
+#popup_this {
+    top: 50%;
+    left: 40%;
+    text-align: center;
+    width: 300px;
+    margin-top: -50px;
+    margin-left: -100px;
+    position: fixed;
+    background: #fff;
+    padding: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#popup_this {
+    display: none;
+}
+
+.header3 {
+    background: #96dc5a;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+}
+
+.article3 {
+    text-align: left;
+    padding: 0px 15px;
+    margin: 0;
+}
+
+.footer3 {
+    background: #dddddd;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+}
+
+.button2 {
+    background-color: #4a92fd;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}

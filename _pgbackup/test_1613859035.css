@@ -1,0 +1,40 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+// etc
+
+header {
+    background: lightpink;
+    padding: 2rem;
+}
+
+main {
+    background: coral;
+}
+
+footer {
+    background: wheat;
+    padding: 2rem;
+    text-align: center;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+}
+
+#popup_this {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin-top: -50px;
+    margin-left: -100px;
+    position: fixed;
+    background: #fff;
+    padding: 30px;
+}
+//#popup_this {display: none;}

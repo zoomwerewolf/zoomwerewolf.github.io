@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>zoom人狼</title>         
+        <link rel="stylesheet" href="test.css">
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="jquery.bpopup.js"></script>
+        <script>
+
+    $(document).ready(function() { setTimeout(function(){ $("#popup_this").bPopup(); $("#popup_this").css("display", "block"); }, 1000); });
+
+</script>
+        <script>
+        $("#popup_this").bPopup({
+            fadeSpeed: 'slow', //can be a string ('slow'/'fast') or int
+            followSpeed: 1500, //can be a string ('slow'/'fast') or int
+            modalColor: 'greenYellow'
+        });
+        </script>
+    </head>     
+    <body> 
+        <div id="popup_this">
+            <span class="button b-close"> <span>X</span> </span>
+            <h3>A nice ad goes here!</h3>
+            <p>Nulla at nunc posuere, dictum sem sed, tristique mi.</p>
+        </div>
+        <header>
+            <h1>Header.com</h1>
+        </header>
+        <main>main here</main>
+        <footer>Footer Content — Header.com 2020</footer>
+    </body>
+</html>

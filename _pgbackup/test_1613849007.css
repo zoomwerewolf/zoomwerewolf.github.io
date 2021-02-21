@@ -1,0 +1,161 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr minmax(150px, 25%);
+    padding: 0;
+    margin: 0;
+    font-family: helvetica;
+}
+
+.call {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    text-align: center;
+    background: #1a1a1a;
+}
+
+.header1 {
+    grid-column: 1 / 4;
+}
+
+.body1 {
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 6rem;
+    grid-column: 1 / 4;
+}
+
+.left-sidebar {
+    grid-column: 1 / 2;
+}
+
+.footer1 {
+    grid-column: 2 / 3;
+}
+
+.right-sidebar {
+    grid-column: 3 / 4;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+}
+
+.header1 img {
+    border: 0;
+    width: auto;
+    height: 15vh;
+    vertical-align: top;
+}
+
+.left-sidebar img {
+    border: 0;
+    width: auto;
+    height: 6vh;
+    vertical-align: top;
+}
+
+.footer1 img {
+    border: 0;
+    width: auto;
+    height: 6vh;
+    vertical-align: top;
+}
+
+.right-sidebar img {
+    border: 0;
+    width: auto;
+    height: 6vh;
+    vertical-align: top;
+}
+
+.chat {
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.chat a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: -999px;
+    z-index: 2;
+}
+
+.header2 {
+    padding: 5px 0px 0px;
+}
+
+.body2 {
+    text-align: left;
+    padding: 0 10px;
+    color: #686868;
+    font-size: 0.6rem;
+}
+
+.footer2 {
+    color: #686868;
+    font-size: 0.6rem;
+    text-align: left;
+    padding: 10px 10px 20px;
+    border-top: 1px solid #11111133;
+    line-height: 0.8;
+}

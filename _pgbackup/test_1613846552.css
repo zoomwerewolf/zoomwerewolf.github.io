@@ -1,0 +1,66 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: helvetica;
+    background: #1a1a1a;
+}
+
+header {
+    grid-column: 1 / 4;
+}
+
+main {
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 6rem;
+    grid-column: 1 / 4;
+}
+
+.left-sidebar {
+    grid-column: 1 / 2;
+}
+
+footer {
+    grid-column: 2 / 3;
+}
+
+.right-sidebar {
+    grid-column: 3 / 4;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+}
+
+header img {
+    border: 0;
+    width: auto;
+    height: 15vh;
+    vertical-align: top;
+}
+
+.left-sidebar img {
+    border: 0;
+    width: auto;
+    height: 8vh;
+    vertical-align: top;
+}
+
+footer img {
+    border: 0;
+    width: auto;
+    height: 8vh;
+    vertical-align: top;
+}
+
+.right-sidebar img {
+    border: 0;
+    width: auto;
+    height: 8vh;
+    vertical-align: top;
+}
