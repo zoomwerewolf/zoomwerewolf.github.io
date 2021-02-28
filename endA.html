@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div style="padding: 45% 0px 0px; position: relative;"><iframe src="https://player.vimeo.com/video/153975789?autoplay=1&byline=0&fun=0&portrait=0&title=0" frameborder="0" allow="autoplay" allowfullscreen scrolling="auto"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
+    <div style="padding: 45% 0px 0px; position: relative;"><iframe src="https://player.vimeo.com/video/517640406?autoplay=1&byline=0&fun=0&portrait=0&title=0" frameborder="0" allow="autoplay" allowfullscreen scrolling="auto"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
 </body>
 <script src="script.js"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
@@ -21,6 +21,8 @@
     player.getVideoTitle().then(function(title) {
       console.log('title:', title);
     });
+    player.on('ended', function(data) {
+        location.replace("credit.html");
 });
   </script>
 </html>
